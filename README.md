@@ -1,7 +1,7 @@
 # Andrew Chin Personal Website
 
-A simple personal website built with HTML, CSS, and a small amount of
-JavaScript for the mobile menu.
+A minimal personal website for Andrew Chin, built with HTML, CSS, and a small
+amount of JavaScript for the mobile menu.
 
 ## Files
 
