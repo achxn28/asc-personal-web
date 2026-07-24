@@ -1,7 +1,7 @@
 # Andrew Chin Personal Website
 
-A simple personal website based on a static classroom-style wireframe. The site
-uses plain HTML, CSS, and a small amount of JavaScript for the mobile menu.
+A simple personal website built with HTML, CSS, and a small amount of
+JavaScript for the mobile menu.
 
 ## Files
 
@@ -9,10 +9,4 @@ uses plain HTML, CSS, and a small amount of JavaScript for the mobile menu.
 - `styles.css`: layout, color, and responsive styles
 - `script.js`: mobile navigation toggle
 
-## Commands
-
-```bash
-npm install
-npm run dev
-npm run build
-```
+Open `index.html` in a browser to view the site.
