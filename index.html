@@ -30,6 +30,10 @@
         <a href="projects.html">Projects</a>
         <a href="about.html">About Me</a>
       </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle>
+        Change colors
+      </button>
     </header>
 
     <main>
@@ -69,6 +73,30 @@
         </aside>
       </section>
 
+      <section class="section compact-section" aria-labelledby="github-title">
+        <div class="section-heading">
+          <p class="eyebrow">GitHub</p>
+          <h2 id="github-title">Check a GitHub username.</h2>
+        </div>
+
+        <form class="github-form" data-github-form>
+          <label for="github-username">GitHub username</label>
+          <div>
+            <input
+              id="github-username"
+              name="github-username"
+              type="text"
+              autocomplete="off"
+              placeholder="achxn28"
+            />
+            <button class="button primary" type="submit">Submit</button>
+          </div>
+          <p class="form-message" data-github-message>
+            Enter a username to get a response.
+          </p>
+        </form>
+      </section>
+
       <section class="section" aria-labelledby="focus-title">
         <div class="section-heading">
           <p class="eyebrow">Focus</p>
@@ -102,7 +130,7 @@
 
     <footer class="site-footer">
       <p>Andrew Chin</p>
-      <p>Based in New York, NY.</p>
+      <p>Based in New York, NY. <span data-current-year></span></p>
     </footer>
 
     <script type="module" src="script.js"></script>

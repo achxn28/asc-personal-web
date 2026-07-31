@@ -9,6 +9,17 @@
   --accent: #3e4854;
 }
 
+body.alt-theme {
+  --bg: #111827;
+  --panel: #1f2937;
+  --ink: #f9fafb;
+  --muted: #cbd5e1;
+  --soft: #374151;
+  --dark: #f9fafb;
+  --dark-muted: #4b5563;
+  --accent: #93c5fd;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -94,6 +105,25 @@ h3 {
   font-size: 0.9rem;
   font-weight: 800;
   padding: 8px 11px;
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--soft);
+  border-radius: 4px;
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 8px 11px;
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--panel);
 }
 
 .page-banner {
@@ -267,6 +297,14 @@ h1 {
   margin-bottom: 18px;
 }
 
+body.alt-theme .project-links {
+  background: linear-gradient(
+    180deg,
+    rgba(31, 41, 55, 0),
+    rgba(31, 41, 55, 0.98) 34%
+  );
+}
+
 .project-links {
   align-items: flex-end;
   background: linear-gradient(
@@ -292,6 +330,50 @@ h1 {
   display: inline-flex;
   font-weight: 800;
   padding: 10px 12px;
+}
+
+.compact-section {
+  padding-bottom: 54px;
+  padding-top: 54px;
+}
+
+.github-form {
+  background: var(--panel);
+  border: 1px solid var(--soft);
+  border-radius: 6px;
+  display: grid;
+  gap: 14px;
+  padding: 24px;
+}
+
+.github-form label {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.github-form div {
+  display: flex;
+  gap: 12px;
+}
+
+.github-form input {
+  background: var(--bg);
+  border: 1px solid var(--soft);
+  border-radius: 4px;
+  color: var(--ink);
+  flex: 1;
+  font: inherit;
+  min-width: 0;
+  padding: 12px;
+}
+
+.github-form input:focus {
+  border-color: var(--accent);
+  outline: 2px solid transparent;
+}
+
+.form-message {
+  font-weight: 700;
 }
 
 .project-card:hover .project-links,
@@ -430,6 +512,10 @@ h1 {
     display: flex;
   }
 
+  .theme-toggle {
+    width: 100%;
+  }
+
   .page-banner,
   .section,
   .education-section,
@@ -445,7 +531,12 @@ h1 {
   .card-grid,
   .timeline-item,
   .skills-grid,
-  .education-section dl div {
+  .education-section dl div,
+  .github-form div {
     grid-template-columns: 1fr;
+  }
+
+  .github-form div {
+    display: grid;
   }
 }
