@@ -12,7 +12,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Andrew Chin home">
+      <a class="brand" href="index.html" aria-label="Andrew Chin home">
         Andrew Chin
       </a>
 
@@ -26,34 +26,31 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About Me</a>
       </nav>
     </header>
 
-    <main id="home">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
+    <main>
+      <section class="page-banner hero-banner" aria-labelledby="hero-title">
+        <div>
           <p class="eyebrow">New York, NY</p>
           <h1 id="hero-title">
             Software engineer, student consultant, and robotics developer.
           </h1>
           <p class="intro">
             I am a student at Stuyvesant High School specializing in software
-            engineering, algorithms, and digital consulting. I co-founded Volta
-            NYC, a student-run consulting organization supporting local small
-            businesses, and develop robotics software for FRC 694 StuyPulse.
+            engineering, algorithms, and digital consulting.
           </p>
           <div class="actions">
-            <a class="button primary" href="#projects">View projects</a>
-            <a class="button secondary" href="#contact">Contact</a>
+            <a class="button primary" href="projects.html">View projects</a>
+            <a class="button secondary" href="about.html">About me</a>
           </div>
         </div>
 
         <aside class="hero-panel" aria-label="Profile summary">
-          <p>Stuyvesant High School</p>
+          <p>Current role</p>
           <h2>Co-founder & Executive Director at Volta NYC</h2>
           <dl class="stats">
             <div>
@@ -72,144 +69,39 @@
         </aside>
       </section>
 
-      <section class="section" id="projects" aria-labelledby="projects-title">
+      <section class="section" aria-labelledby="focus-title">
         <div class="section-heading">
-          <p class="eyebrow">Projects</p>
-          <h2 id="projects-title">Technical and design work.</h2>
+          <p class="eyebrow">Focus</p>
+          <h2 id="focus-title">Technical work with measurable outcomes.</h2>
         </div>
 
-        <div class="card-grid">
+        <div class="card-grid three-column">
           <article class="card">
-            <p class="card-label">Processing / Physics / Enemy Logic</p>
-            <h3>Tank Titans</h3>
-            <p>
-              Independent 2D turn-based artillery combat game built in
-              Processing. Implements custom physics, mathematical trajectory
-              modeling, and adaptive enemy decision-making logic.
-            </p>
+            <p class="card-label">Software</p>
+            <h3>Engineering</h3>
+            <p>Java, Racket, Processing, algorithms, and custom simulations.</p>
           </article>
 
           <article class="card">
-            <p class="card-label">Figma / UI/UX</p>
-            <h3>JobSpotter UI/UX Wireframes</h3>
-            <p>
-              Interactive mobile wireframes and page prototypes for a job
-              seeker homepage and user profile flow.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section
-        class="section split-section"
-        id="experience"
-        aria-labelledby="experience-title"
-      >
-        <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2 id="experience-title">Leadership and technical roles.</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div>
-              <p class="date">2024 - Present</p>
-              <h3>Co-founder & Executive Director</h3>
-              <p class="organization">Volta NYC</p>
-            </div>
-            <p>
-              Scaled a student-run digital and financial consulting
-              organization to 300+ student members. Delivered consulting
-              services and digital infrastructure support to over 100 local
-              small businesses.
-            </p>
-          </article>
-
-          <article class="timeline-item">
-            <div>
-              <p class="date">2024 - Present</p>
-              <h3>Software Team Member & Subsystem Lead</h3>
-              <p class="organization">FRC 694 StuyPulse Robotics</p>
-            </div>
-            <p>
-              Developed control software for competition robots, managed
-              subsystem engineering workflows, and mentored 20+ team members in
-              software development principles.
-            </p>
-          </article>
-
-          <article class="timeline-item">
-            <div>
-              <p class="date">Summer - December 2025</p>
-              <h3>Cohort Member</h3>
-              <p class="organization">Google Team Edge</p>
-            </div>
-            <p>
-              Completed a technical leadership curriculum focused on
-              collaborative software engineering practices and structured
-              problem-solving.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="skills" aria-labelledby="skills-title">
-        <div class="section-heading">
-          <p class="eyebrow">Skills</p>
-          <h2 id="skills-title">Areas of focus.</h2>
-        </div>
-
-        <div class="skills-grid">
-          <article>
-            <h3>Programming</h3>
-            <p>Java, Racket, Processing</p>
-          </article>
-          <article>
-            <h3>Computer Science</h3>
-            <p>Recursion, backtracking, AP Computer Science A</p>
-          </article>
-          <article>
-            <h3>Design Tools</h3>
-            <p>Figma, UI/UX wireframing, mobile prototyping, Git/GitHub</p>
-          </article>
-          <article>
+            <p class="card-label">Organizations</p>
             <h3>Leadership</h3>
             <p>
-              Technical mentoring, subsystem management, digital consulting,
-              organizational management
+              Student consulting, technical mentoring, subsystem management,
+              and team operations.
             </p>
           </article>
-        </div>
-      </section>
 
-      <section class="education-section" aria-labelledby="education-title">
-        <div>
-          <p class="eyebrow">Education</p>
-          <h2 id="education-title">Stuyvesant High School</h2>
-          <p>New York, NY</p>
+          <article class="card">
+            <p class="card-label">Design</p>
+            <h3>Digital Products</h3>
+            <p>Mobile UI/UX wireframes, page prototypes, and interface systems.</p>
+          </article>
         </div>
-        <dl>
-          <div>
-            <dt>GPA</dt>
-            <dd>96.7 cumulative</dd>
-          </div>
-          <div>
-            <dt>SAT</dt>
-            <dd>1580, 800 Math, 780 Reading</dd>
-          </div>
-          <div>
-            <dt>Coursework</dt>
-            <dd>AP Computer Science A, AP Calculus BC self-study</dd>
-          </div>
-        </dl>
       </section>
     </main>
 
-    <footer class="site-footer" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Professional inquiries and opportunities.</h2>
-      </div>
+    <footer class="site-footer">
+      <p>Andrew Chin</p>
       <p>Based in New York, NY.</p>
     </footer>
 

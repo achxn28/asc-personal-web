@@ -43,7 +43,7 @@ h3 {
 }
 
 .site-header,
-.hero,
+.page-banner,
 .section,
 .education-section,
 .site-footer {
@@ -78,7 +78,8 @@ h3 {
 }
 
 .site-nav a:hover,
-.site-nav a:focus-visible {
+.site-nav a:focus-visible,
+.site-nav a[aria-current="page"] {
   color: var(--ink);
 }
 
@@ -95,12 +96,16 @@ h3 {
   padding: 8px 11px;
 }
 
-.hero {
+.page-banner {
+  border-bottom: 1px solid var(--soft);
+  padding-bottom: 70px;
+  padding-top: 74px;
+}
+
+.hero-banner {
   display: grid;
   gap: 28px;
   grid-template-columns: minmax(0, 1fr) 360px;
-  padding-bottom: 70px;
-  padding-top: 74px;
 }
 
 .hero-copy {
@@ -245,6 +250,7 @@ h1 {
 }
 
 .card h3,
+.card h2,
 .skills-grid h3,
 .timeline-item h3 {
   font-size: 1.25rem;
@@ -347,7 +353,7 @@ h1 {
 }
 
 @media (max-width: 900px) {
-  .hero,
+  .hero-banner,
   .split-section,
   .education-section,
   .section-heading {
@@ -385,7 +391,7 @@ h1 {
     display: flex;
   }
 
-  .hero,
+  .page-banner,
   .section,
   .education-section,
   .site-footer {

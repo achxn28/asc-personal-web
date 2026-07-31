@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="About Andrew Chin, a Stuyvesant High School student and software developer in New York City."
+    />
+    <title>About Me | Andrew Chin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Andrew Chin home">
+        Andrew Chin
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-controls="site-nav"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html" aria-current="page">About Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-banner" aria-labelledby="about-title">
+        <p class="eyebrow">About Me</p>
+        <h1 id="about-title">Student engineer focused on useful systems.</h1>
+        <p class="intro">
+          I am a high school student at Stuyvesant High School in New York City
+          with interests in software engineering, algorithms, robotics, and
+          digital consulting.
+        </p>
+      </section>
+
+      <section class="section split-section" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Leadership and technical roles.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div>
+              <p class="date">2024 - Present</p>
+              <h3>Co-founder & Executive Director</h3>
+              <p class="organization">Volta NYC</p>
+            </div>
+            <p>
+              Scaled a student-run digital and financial consulting
+              organization to 300+ student members. Delivered consulting
+              services and digital infrastructure support to over 100 local
+              small businesses.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div>
+              <p class="date">2024 - Present</p>
+              <h3>Software Team Member & Subsystem Lead</h3>
+              <p class="organization">FRC 694 StuyPulse Robotics</p>
+            </div>
+            <p>
+              Developed control software for competition robots, managed
+              subsystem engineering workflows, and mentored 20+ team members in
+              software development principles.
+            </p>
+          </article>
+
+          <article class="timeline-item">
+            <div>
+              <p class="date">Summer - December 2025</p>
+              <h3>Cohort Member</h3>
+              <p class="organization">Google Team Edge</p>
+            </div>
+            <p>
+              Completed a technical leadership curriculum focused on
+              collaborative software engineering practices and structured
+              problem-solving.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Areas of focus.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article>
+            <h3>Programming</h3>
+            <p>Java, Racket, Processing</p>
+          </article>
+          <article>
+            <h3>Computer Science</h3>
+            <p>Recursion, backtracking, AP Computer Science A</p>
+          </article>
+          <article>
+            <h3>Design Tools</h3>
+            <p>Figma, UI/UX wireframing, mobile prototyping, Git/GitHub</p>
+          </article>
+          <article>
+            <h3>Leadership</h3>
+            <p>
+              Technical mentoring, subsystem management, digital consulting,
+              organizational management
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="education-section" aria-labelledby="education-title">
+        <div>
+          <p class="eyebrow">Education</p>
+          <h2 id="education-title">Stuyvesant High School</h2>
+          <p>New York, NY</p>
+        </div>
+        <dl>
+          <div>
+            <dt>GPA</dt>
+            <dd>96.7 cumulative</dd>
+          </div>
+          <div>
+            <dt>SAT</dt>
+            <dd>1580, 800 Math, 780 Reading</dd>
+          </div>
+          <div>
+            <dt>Coursework</dt>
+            <dd>AP Computer Science A, AP Calculus BC self-study</dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Andrew Chin</p>
+      <p>Based in New York, NY.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

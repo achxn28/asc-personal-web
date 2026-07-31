@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Projects by Andrew Chin in software engineering, robotics, and UI/UX design."
+    />
+    <title>Projects | Andrew Chin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Andrew Chin home">
+        Andrew Chin
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-controls="site-nav"
+        aria-expanded="false"
+      >
+        Menu
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="about.html">About Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-banner" aria-labelledby="projects-title">
+        <p class="eyebrow">Projects</p>
+        <h1 id="projects-title">Technical and design work.</h1>
+        <p class="intro">
+          Selected projects across independent software development, UI/UX
+          prototyping, and competition robotics.
+        </p>
+      </section>
+
+      <section class="section" aria-label="Project cards">
+        <div class="card-grid">
+          <article class="card project-card">
+            <p class="card-label">Processing / Physics / Enemy Logic</p>
+            <h2>Tank Titans</h2>
+            <p>
+              Independent 2D turn-based artillery combat game built in
+              Processing. Implements custom physics, mathematical trajectory
+              modeling, and adaptive enemy decision-making logic.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <p class="card-label">Figma / UI/UX</p>
+            <h2>JobSpotter UI/UX Wireframes</h2>
+            <p>
+              Interactive mobile wireframes and page prototypes for a job
+              seeker homepage and user profile flow.
+            </p>
+          </article>
+
+          <article class="card project-card">
+            <p class="card-label">Robotics / Java / Controls</p>
+            <h2>FRC 694 StuyPulse Software</h2>
+            <p>
+              Control software and subsystem development for competition robot
+              workflows, with team mentoring responsibilities.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Andrew Chin</p>
+      <p>Projects, engineering, and design.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
