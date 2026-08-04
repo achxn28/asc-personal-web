@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Translate a lunch order into Yoda speak and pair it with a random GIF."
+      content="Andrew Chin is a software engineer, student consultant, and robotics developer based in New York City."
     />
-    <title>Yoda Lunch Order</title>
+    <title>Andrew Chin</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Yoda Lunch home">
-        Yoda Lunch
+      <a class="brand" href="index.html" aria-label="Andrew Chin home">
+        Andrew Chin
       </a>
 
       <button
@@ -26,7 +26,7 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="index.html" aria-current="page">App</a>
+        <a href="index.html" aria-current="page">Home</a>
         <a href="projects.html">Projects</a>
         <a href="about.html">About Me</a>
       </nav>
@@ -37,66 +37,100 @@
     </header>
 
     <main>
-      <section class="page-banner lunch-app" aria-labelledby="lunch-title">
-        <div class="section-heading">
-          <p class="eyebrow">Week 5 Day 2</p>
-          <div>
-            <h1 id="lunch-title">Order lunch, Yoda style.</h1>
-            <p class="intro">
-              Enter a lunch order, catch the submit button, and get a Yoda
-              translation with a random lunch GIF.
-            </p>
+      <section class="page-banner hero-banner" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">New York, NY</p>
+          <h1 id="hero-title">
+            Software engineer, student consultant, and robotics developer.
+          </h1>
+          <p class="intro">
+            I am a student at Stuyvesant High School specializing in software
+            engineering, algorithms, and digital consulting.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="projects.html">View projects</a>
+            <a class="button secondary" href="about.html">About me</a>
           </div>
         </div>
 
-        <form class="lunch-form" data-lunch-form>
-          <label for="lunch-order">Lunch order</label>
-          <div class="lunch-controls">
+        <aside class="hero-panel" aria-label="Profile summary">
+          <p>Current role</p>
+          <h2>Co-founder & Executive Director at Volta NYC</h2>
+          <dl class="stats">
+            <div>
+              <dt>300+</dt>
+              <dd>student members</dd>
+            </div>
+            <div>
+              <dt>100+</dt>
+              <dd>small businesses supported</dd>
+            </div>
+            <div>
+              <dt>20+</dt>
+              <dd>robotics teammates mentored</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="section compact-section" aria-labelledby="github-title">
+        <div class="section-heading">
+          <p class="eyebrow">GitHub</p>
+          <h2 id="github-title">Check a GitHub username.</h2>
+        </div>
+
+        <form class="github-form" data-github-form>
+          <label for="github-username">GitHub username</label>
+          <div>
             <input
-              id="lunch-order"
-              name="lunch-order"
+              id="github-username"
+              name="github-username"
               type="text"
               autocomplete="off"
-              placeholder="Turkey sandwich and lemonade"
-              required
+              placeholder="achxn28"
             />
-            <button
-              class="button primary evasive-button"
-              type="submit"
-              data-submit-order
-            >
-              Submit
-            </button>
+            <button class="button primary" type="submit">Submit</button>
           </div>
-
-          <div class="api-results" aria-live="polite">
-            <section class="result-panel" aria-labelledby="translation-title">
-              <h3 id="translation-title">Translated order</h3>
-              <p class="form-message" data-translation-output>
-                Enter lunch, then catch the button.
-              </p>
-            </section>
-
-            <section class="result-panel gif-panel" aria-labelledby="gif-title">
-              <h3 id="gif-title">Random GIF</h3>
-              <div class="gif-frame" data-gif-output></div>
-              <a
-                class="giphy-attribution"
-                href="https://giphy.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Powered by GIPHY
-              </a>
-            </section>
-          </div>
+          <p class="form-message" data-github-message>
+            Enter a username to get a response.
+          </p>
         </form>
+      </section>
+
+      <section class="section" aria-labelledby="focus-title">
+        <div class="section-heading">
+          <p class="eyebrow">Focus</p>
+          <h2 id="focus-title">Technical work with measurable outcomes.</h2>
+        </div>
+
+        <div class="card-grid three-column">
+          <article class="card">
+            <p class="card-label">Software</p>
+            <h3>Engineering</h3>
+            <p>Java, Racket, Processing, algorithms, and custom simulations.</p>
+          </article>
+
+          <article class="card">
+            <p class="card-label">Organizations</p>
+            <h3>Leadership</h3>
+            <p>
+              Student consulting, technical mentoring, subsystem management,
+              and team operations.
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card-label">Design</p>
+            <h3>Digital Products</h3>
+            <p>Mobile UI/UX wireframes, page prototypes, and interface systems.</p>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Yoda Lunch</p>
-      <p>Two APIs, one tricky button. <span data-current-year></span></p>
+      <p>Andrew Chin</p>
+      <p>Based in New York, NY. <span data-current-year></span></p>
     </footer>
 
     <script type="module" src="script.js"></script>
