@@ -103,14 +103,14 @@ async function submitLunchOrder(event) {
   const orderText = String(formData.get("lunch-order") || "").trim();
 
   if (!orderText) {
-    translationOutput.textContent = "Enter a lunch order before submitting.";
+    translationOutput.textContent = "Lunch first, translate later.";
     gifOutput.replaceChildren();
     return;
   }
 
   lunchButton.disabled = true;
   translationOutput.textContent = "Translating your lunch order...";
-  gifOutput.textContent = "Loading GIF...";
+  gifOutput.textContent = "Finding a GIF...";
 
   try {
     const [translatedText, gifUrl] = await Promise.all([
@@ -125,8 +125,8 @@ async function submitLunchOrder(event) {
     gifOutput.replaceChildren(gifImage);
   } catch (error) {
     translationOutput.textContent =
-      "Unable to load API results. Check the API keys and try again.";
-    gifOutput.textContent = "GIF unavailable.";
+      "The APIs are being stubborn. Try again in a moment.";
+    gifOutput.textContent = "GIF unavailable right now.";
   } finally {
     lunchButton.disabled = false;
   }
